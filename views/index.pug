@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset="utf8")
+    title Exemple
+  body
+    h1 Exemple....
+    div.
+      Il y a #{msgs.length} messages
+    form(method="POST",action=".")
+      textarea(name="msg")
+      button(type="submit") Envoyer
+    
+    p La liste des 
+      a(href="/messages") messages en JSON
