@@ -19,6 +19,6 @@ Voici un exemple du code. Pour l'utiliser il faut:
 
         node index.js
 
-   et aller vers <hhtp://localhost:9876>
+   et aller vers <http://localhost:9876>
  
 J'espère que ça va vous aider.
