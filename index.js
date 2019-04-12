@@ -10,13 +10,13 @@ var mesMessages = jsonFileObject({
 
 app = express();
 
-var jsonParser = bodyParser.urlencoded({extended:false});
+var parser = bodyParser.urlencoded({extended:false});
 
 app.get("/messages", function(req,res) {
     res.json(mesMessages);
 });
 
-app.post("/", jsonParser, function(req,res) {
+app.post("/", parser, function(req,res) {
     mesMessages.push(req.body);
     res.render("index.pug",{msgs:mesMessages});
 });
